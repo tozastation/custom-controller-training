@@ -1,0 +1,20 @@
+domain: tozastation.github.io
+layout:
+- go.kubebuilder.io/v3
+projectName: custom-controller-training
+repo: github.com/tozastation/custom-controller-training
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: tozastation.github.io
+  group: view
+  kind: MarkdownView
+  path: github.com/tozastation/custom-controller-training/api/v1
+  version: v1
+  webhooks:
+    defaulting: true
+    validation: true
+    webhookVersion: v1
+version: "3"

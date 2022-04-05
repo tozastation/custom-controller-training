@@ -1,0 +1,7 @@
+resources:
+  - certificate.yaml
+
+configurations:
+  - kustomizeconfig.yaml
+
+namespace: custom-controller-training-system
